@@ -1,15 +1,17 @@
 # flake8: noqa
 import os
 from pathlib import Path
+
+from django.core.management.utils import get_random_secret_key
 from dotenv import load_dotenv
 
 load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.environ.get('SECRET_KEY', 'default_value')
+SECRET_KEY = os.environ.get('SECRET_KEY', get_random_secret_key())
 
-DEBUG = os.environ.get('SECRET_KEY', 'default_value')
+DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
 
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '127.0.0.1').split(',')
 
