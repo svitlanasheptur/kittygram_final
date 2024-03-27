@@ -1,5 +1,7 @@
 # Kittygram #
 
+[![Kittygram Workflow](https://github.com/svitlanasheptur/kittygram_final/actions/workflows/main.yml/badge.svg)](https://github.com/svitlanasheptur/kittygram_final/actions/workflows/main.yml)
+
 Kittygram - это веб-приложение для обмена фотографиями и видео с котиками. Пользователи могут создавать аккаунты, загружать медиафайлы, ставить лайки и оставлять комментарии.
 
 ### Стек технологий ###
